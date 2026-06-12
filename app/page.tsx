@@ -1,6 +1,7 @@
 import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
 import { Steps } from "@/components/steps"
+import { MedicalDisclaimer } from "@/components/medical-disclaimer"
 import { Testimonials } from "@/components/testimonials"
 import { BmiCalculator } from "@/components/bmi-calculator"
 import { Program } from "@/components/program"
@@ -15,6 +16,7 @@ export default function Page() {
       <main>
         <Hero />
         <Steps />
+        <MedicalDisclaimer />
         <Testimonials />
         <BmiCalculator />
         <Program />
