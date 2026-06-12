@@ -24,19 +24,19 @@ export const steps = [
     number: "1",
     title: "Tell us about your health",
     description:
-      "Get a free no-obligation consultation from one of our weight loss specialists.",
+      "Get a free no-obligation consultation from one of our Doctors.",
   },
   {
     number: "2",
     title: "Get prescribed",
     description:
-      "Upon medical approval, your prescription will be shipped with priority by our partner pharmacy.",
+      "Upon medical approval, you'll be given a prescription and then issued the medication by one of our partner pharmacies across Nairobi.",
   },
   {
     number: "3",
     title: "Start Losing Weight",
     description:
-      "We're by your side in every step of your weight loss journey, committed to your satisfaction and best outcome.",
+      "We guide you through the treatment program. We're by your side in every step of your weight loss journey.",
   },
 ]
 
