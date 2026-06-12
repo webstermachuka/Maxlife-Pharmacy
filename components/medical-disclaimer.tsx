@@ -5,7 +5,7 @@ export function MedicalDisclaimer() {
         <h2 className="font-sans text-2xl font-semibold text-foreground sm:text-3xl">
           Medical Disclaimer
         </h2>
-        <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+        <p className="mt-4 text-pretty leading-7 text-muted-foreground">
           The information on this website and any company pages is intended for
           educational purposes only and does not constitute medical advice. All
           treatments described are prescription-only and are available solely
