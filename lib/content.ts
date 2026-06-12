@@ -9,13 +9,13 @@ export const trustBadges = [
 export const medications = [
   {
     name: "Semaglutide",
-    result: "Lose 16.9% body weight in 68 weeks",
-    price: "Starting at $155/mo",
+    result: "Lose up to 20% body weight",
+    price: "Starting at Ksh 25 000/mo",
   },
   {
     name: "Tirzepatide",
-    result: "Lose 24.3% body weight in 72 weeks",
-    price: "Starting at $195/mo",
+    result: "Lose up to 25% body weight",
+    price: "Starting at Ksh 35 000/mo",
   },
 ]
 

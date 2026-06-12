@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono, Fraunces } from 'next/font/google'
+import { Geist, Geist_Mono, Fraunces, Inter } from 'next/font/google'
 import './globals.css'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
@@ -12,6 +12,7 @@ const fraunces = Fraunces({
   variable: '--font-fraunces',
   subsets: ['latin'],
 })
+const inter = Inter({ variable: '--font-inter', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Maxlife | Personalized GLP-1 Weight Loss Treatment',
@@ -45,7 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} bg-background`}
+      className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} ${inter.variable} bg-background`}
     >
       <body className="font-sans antialiased">
         {children}
