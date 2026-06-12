@@ -49,25 +49,6 @@ export const testimonials = [
       "Unlike other companies with hidden fees, MaxLife was completely transparent.",
   },
   {
-    name: "Olivia",
-    amount: "25lbs",
-    duration: "4 months",
-    quote: "I finally feel empowered to control my weight!",
-  },
-  {
-    name: "David",
-    amount: "25lbs",
-    duration: "4 months",
-    quote: "Using MaxLife with U.S.-based pharmacies felt secure.",
-  },
-  {
-    name: "Sara",
-    amount: "15lbs",
-    duration: "2 months",
-    quote:
-      "I thought I had exhausted every option for weight loss. It was a game changer.",
-  },
-  {
     name: "Linda",
     amount: "30lbs",
     duration: "3 months",
