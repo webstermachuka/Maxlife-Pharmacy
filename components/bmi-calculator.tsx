@@ -18,25 +18,38 @@ function classify(bmi: number): string {
   return "Obese"
 }
 
+type HeightUnit = "imperial" | "metric"
+
 export function BmiCalculator() {
+  const [heightUnit, setHeightUnit] = useState<HeightUnit>("imperial")
   const [feet, setFeet] = useState("")
   const [inches, setInches] = useState("")
+  const [cm, setCm] = useState("")
   const [weight, setWeight] = useState("")
   const [result, setResult] = useState<BmiResult | null>(null)
   const [error, setError] = useState("")
 
   function calculate(e: React.FormEvent) {
     e.preventDefault()
-    const totalInches = Number(feet) * 12 + Number(inches)
-    const lbs = Number(weight)
 
-    if (!totalInches || !lbs || totalInches <= 0 || lbs <= 0) {
+    // Convert height to meters behind the scenes
+    let heightMeters = 0
+    if (heightUnit === "imperial") {
+      const totalInches = Number(feet) * 12 + Number(inches)
+      heightMeters = totalInches * 0.0254
+    } else {
+      heightMeters = Number(cm) / 100
+    }
+
+    const kg = Number(weight)
+
+    if (!heightMeters || !kg || heightMeters <= 0 || kg <= 0) {
       setError("Please enter a valid height and weight.")
       setResult(null)
       return
     }
 
-    const bmi = (lbs / (totalInches * totalInches)) * 703
+    const bmi = kg / (heightMeters * heightMeters)
     setError("")
     setResult({ value: Math.round(bmi * 10) / 10, category: classify(bmi) })
   }
@@ -57,43 +70,98 @@ export function BmiCalculator() {
               <legend className="mb-2 text-sm font-medium text-foreground">
                 Height
               </legend>
-              <div className="flex gap-3">
-                <div className="flex-1">
-                  <Label htmlFor="feet" className="sr-only">
-                    Feet
-                  </Label>
-                  <Input
-                    id="feet"
-                    type="number"
-                    inputMode="numeric"
-                    placeholder="ft"
-                    value={feet}
-                    onChange={(e) => setFeet(e.target.value)}
-                  />
-                </div>
-                <div className="flex-1">
-                  <Label htmlFor="inches" className="sr-only">
-                    Inches
-                  </Label>
-                  <Input
-                    id="inches"
-                    type="number"
-                    inputMode="numeric"
-                    placeholder="in"
-                    value={inches}
-                    onChange={(e) => setInches(e.target.value)}
-                  />
-                </div>
+
+              <div
+                role="radiogroup"
+                aria-label="Height measurement system"
+                className="mb-2 inline-flex w-fit rounded-lg border border-border bg-card p-1"
+              >
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={heightUnit === "imperial"}
+                  onClick={() => setHeightUnit("imperial")}
+                  className={`rounded-md px-4 py-1.5 text-sm font-medium transition-colors ${
+                    heightUnit === "imperial"
+                      ? "bg-primary text-primary-foreground"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  Feet & Inches
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={heightUnit === "metric"}
+                  onClick={() => setHeightUnit("metric")}
+                  className={`rounded-md px-4 py-1.5 text-sm font-medium transition-colors ${
+                    heightUnit === "metric"
+                      ? "bg-primary text-primary-foreground"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  Centimeters
+                </button>
               </div>
+
+              {heightUnit === "imperial" ? (
+                <div className="flex gap-3">
+                  <div className="flex-1">
+                    <Label htmlFor="feet" className="mb-1.5 block text-sm">
+                      Feet
+                    </Label>
+                    <Input
+                      id="feet"
+                      type="number"
+                      inputMode="numeric"
+                      min="0"
+                      placeholder="e.g. 5"
+                      value={feet}
+                      onChange={(e) => setFeet(e.target.value)}
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <Label htmlFor="inches" className="mb-1.5 block text-sm">
+                      Inches
+                    </Label>
+                    <Input
+                      id="inches"
+                      type="number"
+                      inputMode="numeric"
+                      min="0"
+                      max="11"
+                      placeholder="e.g. 10"
+                      value={inches}
+                      onChange={(e) => setInches(e.target.value)}
+                    />
+                  </div>
+                </div>
+              ) : (
+                <div>
+                  <Label htmlFor="cm" className="mb-1.5 block text-sm">
+                    Centimeters
+                  </Label>
+                  <Input
+                    id="cm"
+                    type="number"
+                    inputMode="numeric"
+                    min="0"
+                    placeholder="e.g. 178"
+                    value={cm}
+                    onChange={(e) => setCm(e.target.value)}
+                  />
+                </div>
+              )}
             </fieldset>
 
             <div className="flex flex-col gap-2">
-              <Label htmlFor="weight">Weight</Label>
+              <Label htmlFor="weight">Weight (kg)</Label>
               <Input
                 id="weight"
                 type="number"
                 inputMode="numeric"
-                placeholder="lbs"
+                min="0"
+                placeholder="e.g. 70 kg"
                 value={weight}
                 onChange={(e) => setWeight(e.target.value)}
               />
@@ -137,15 +205,15 @@ export function BmiCalculator() {
           <div className="flex items-center justify-between gap-4 border-t border-border p-5">
             <div>
               <p className="font-semibold text-card-foreground">Jenny, 25</p>
-              <p className="text-sm text-muted-foreground">30 lbs in 3 months</p>
+              <p className="text-sm text-muted-foreground">14 kg in 3 months</p>
             </div>
             <div className="text-right text-sm text-muted-foreground">
               <p>
-                <span className="font-semibold text-foreground">200 lbs</span>{" "}
+                <span className="font-semibold text-foreground">91 kg</span>{" "}
                 before
               </p>
               <p>
-                <span className="font-semibold text-primary">170 lbs</span> after
+                <span className="font-semibold text-primary">77 kg</span> after
               </p>
             </div>
           </div>
