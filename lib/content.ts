@@ -95,28 +95,29 @@ export const whyMaxlife = [
 
 export const faqs = [
   {
-    question: "How do these medications for weight loss work?",
+    question: "Are injectable weight loss medications available in Kenya?",
     answer:
-      "Semaglutide and Tirzepatide make you feel full faster, reduce food cravings, and improve insulin sensitivity. They also slow down food traveling through your system making you feel less hungry.",
+      "Yes. Certain injectable weight loss medications, including those in the GLP-1 and dual-agonist categories, are available in Kenya and are prescribed at Maxlife Pharmacy under full medical supervision. All prescriptions are issued by our qualified doctors following a thorough individual assessment, in line with international obesity treatment guidelines.",
   },
   {
-    question: "How do I sign up?",
+    question: "How much does treatment cost?",
     answer:
-      "To start, complete the online form to see if you're a good fit for our program.",
+      "Pricing depends on your individual treatment plan, dosage, and the program type recommended by your doctor, but the base prices are those on the website. We discuss costs transparently during your initial consultation. To get a personalised quote, please book a consultation with our team.",
   },
   {
-    question: "Is medication included in my membership fee?",
-    answer: "Yes, medications and supplies are included in your membership fee.",
+    question: "Can I access these medications without a prescription?",
+    answer:
+      "No. These are prescription-only medications and must be assessed and prescribed by a licensed clinician. Accessing them without medical supervision is unsafe and strongly discouraged due to their significant effects on appetite, digestion, and metabolic function.",
   },
   {
-    question: "How do I see my provider?",
+    question: "What happens if I stop the medication? Will I regain weight?",
     answer:
-      "After completing your medical intake forms, our team will review your submission and guide you through the next steps. If your state requires a TeleVisit, one of our licensed providers will contact you directly to schedule and complete your 2-way audiovisual appointment.",
+      "Some weight regain is possible if medication is discontinued without sustainable lifestyle changes in place. We also offer consultation advice to help you build lasting behaviours that support your results beyond the treatment period.",
   },
   {
-    question: "In which states does Maxlife provide services?",
+    question: "How soon will I see results?",
     answer:
-      "Maxlife.com provides services in all states across the United States.",
+      "Many patients notice reduced appetite within the first few weeks. Visible weight loss typically begins around weeks four to six, with steady progress over several months. Results vary by individual and are influenced by adherence to the full programme, including proper nutrition and exercise support.",
   },
   {
     question: "What are the side effects of the medication?",
@@ -124,28 +125,19 @@ export const faqs = [
       "GLP-1 medications are clinically tested, stimulant-free, and non-habit-forming. The side effects of this class of medications are mainly gastrointestinal, with most individuals reporting symptoms such as queasiness or nausea. A very small percentage of users report experiencing vomiting, diarrhea, or constipation. These side effects generally improve as the body adjusts to the medication. The compounded formula in our program includes B vitamins to help minimize gastrointestinal side effects.",
   },
   {
-    question: "How often is my prescription shipped?",
+    question:
+      "Is this treatment safe for patients with diabetes, PCOS, or hormonal conditions?",
     answer:
-      "Your prescription shipping frequency depends on your billing period and your prescribed dosage. Some patients receive shipments monthly, while others receive shipments every 90 days (quarterly). Your membership covers the cost of your prescription, supplies, and priority shipping.",
+      "These medications can be beneficial for patients with insulin resistance, type 2 diabetes, or PCOS, as they support blood sugar regulation alongside weight loss. However, careful medical assessment is essential, particularly if you are already on other medications. Your doctor will review your full health profile before prescribing.",
   },
   {
-    question: "Who manufactures the medications offered by Maxlife?",
+    question: "Where does Maxlife get the medications offered?",
     answer:
-      "Maxlife is a wellness platform that facilitates access to care; we are not a drug manufacturer or a compounding pharmacy. All semaglutide and tirzepatide products offered through our site are prepared by our licensed pharmacy partners, including Hallandale Pharmacy, Red Rock Pharmacy, and Strive Pharmacy.",
+      "Maxlife is a wellness platform managed by licensed doctors that facilitates access to care; we are not a drug manufacturer or a pharmacy. All semaglutide and tirzepatide products offered through our site are sold by our licensed pharmacy partners.",
   },
   {
-    question: "When will I receive my medication?",
+    question: "What does Maxlife actually do?",
     answer:
-      "Your prescribed GLP-1 medication will be sent to an associate compounding pharmacy licensed in your state. On average, the pharmacy takes 2-3 business days to process the order and ship when the medication is in stock. The medicine and needles are shipped in an insulated container with ice and can be kept in the box for up to 72 hours.",
-  },
-  {
-    question: "What if I need a higher dose?",
-    answer:
-      "We understand that every patient's needs are different. If you feel a higher dose may be necessary, our team will coordinate a call with one of our licensed providers to review your request. If a higher dose is medically appropriate and approved by your provider, your prescription and membership will be adjusted accordingly.",
-  },
-  {
-    question: "Is there a long term contract required?",
-    answer:
-      "No. MaxLife programs do not require a long-term contract. We offer different billing periods, and you may cancel anytime by submitting a cancellation notice at least 30 days before your next billing period begins. Please note that medication costs are not refundable.",
+      "Maxlife makes your weight loss journey simple, accessible, safe, and fully supported. We help you every step of the way, from medical assessment and prescription to medication dispensing and ongoing guidance throughout your treatment. With Maxlife, you can access clinically approved weight loss treatments with confidence, knowing you have professional support and personalized care throughout your journey.",
   },
 ]
