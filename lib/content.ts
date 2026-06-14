@@ -1,11 +1,3 @@
-export const trustBadges = [
-  "15,000+ Members",
-  "FSA & HSA eligible with all plans",
-  "No hidden fees",
-  "No insurance needed",
-  "Free expedited shipping",
-]
-
 export const medications = [
   {
     name: "Semaglutide",
