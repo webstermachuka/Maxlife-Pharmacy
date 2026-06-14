@@ -205,7 +205,7 @@ export function BmiCalculator() {
           <div className="flex items-center justify-between gap-4 border-t border-border p-5">
             <div>
               <p className="font-semibold text-card-foreground">Mwangi, 27</p>
-              <p className="text-sm text-muted-foreground">18 kg in 12 months</p>
+              <p className="text-sm text-muted-foreground">18 kg in 12 months with exercise</p>
             </div>
             <div className="text-right text-sm text-muted-foreground">
               <p>
