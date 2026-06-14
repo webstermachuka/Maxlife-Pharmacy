@@ -19,7 +19,7 @@ export function Consultation() {
     <section id="consultation" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
       <div className="grid gap-12 lg:grid-cols-2">
         <div className="flex flex-col gap-6">
-          <h2 className="text-balance font-serif text-3xl font-semibold text-foreground sm:text-4xl">
+          <h2 className="text-balance text-3xl font-semibold text-foreground sm:text-4xl">
             Book a free 20-minute consultation
           </h2>
           <p className="text-lg leading-relaxed text-muted-foreground">

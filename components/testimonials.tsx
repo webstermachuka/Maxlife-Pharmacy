@@ -31,7 +31,7 @@ export function Testimonials() {
             <figcaption className="mt-auto border-t border-border pt-4">
               <span className="font-semibold text-foreground">{t.name}</span>
               <span className="block text-sm text-muted-foreground">
-                Maxlife member
+                Client
               </span>
             </figcaption>
           </figure>
