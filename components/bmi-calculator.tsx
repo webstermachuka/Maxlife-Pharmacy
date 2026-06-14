@@ -196,7 +196,7 @@ export function BmiCalculator() {
 
         <div className="overflow-hidden rounded-2xl border border-border bg-card">
           <Image
-            src="/before-after.png"
+            src="/before-after-beach.png"
             alt="Before and after weight loss transformation of a member"
             width={640}
             height={520}
