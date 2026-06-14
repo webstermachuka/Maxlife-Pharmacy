@@ -204,16 +204,16 @@ export function BmiCalculator() {
           />
           <div className="flex items-center justify-between gap-4 border-t border-border p-5">
             <div>
-              <p className="font-semibold text-card-foreground">Jenny, 25</p>
-              <p className="text-sm text-muted-foreground">14 kg in 3 months</p>
+              <p className="font-semibold text-card-foreground">Mwangi, 27</p>
+              <p className="text-sm text-muted-foreground">18 kg in 12 months</p>
             </div>
             <div className="text-right text-sm text-muted-foreground">
               <p>
-                <span className="font-semibold text-foreground">91 kg</span>{" "}
+                <span className="font-semibold text-foreground">88 kg</span>{" "}
                 before
               </p>
               <p>
-                <span className="font-semibold text-primary">77 kg</span> after
+                <span className="font-semibold text-primary">70 kg</span> after
               </p>
             </div>
           </div>
