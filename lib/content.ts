@@ -34,22 +34,22 @@ export const steps = [
 
 export const testimonials = [
   {
-    name: "Emily",
-    amount: "14kg",
+    name: "Awuor",
+    amount: "7 Kg",
     duration: "3 months",
     quote:
       "Unlike other companies with hidden fees, MaxLife was completely transparent.",
   },
   {
     name: "Linda",
-    amount: "14kg",
+    amount: "5 Kg",
     duration: "3 months",
     quote:
       "Finally, something that fits my life. I lost 14 kg in 3 months and have energy all day.",
   },
   {
-    name: "Sarah",
-    amount: "11kg",
+    name: "Jemwetich",
+    amount: "9 kg",
     duration: "3 months",
     quote:
       "It's not just about the scale. I joined Maxlife for my daughter's wedding and lost 11 kg.",

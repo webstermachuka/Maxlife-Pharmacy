@@ -18,7 +18,7 @@ export function Testimonials() {
             className="flex flex-col gap-4 rounded-xl border border-border bg-card p-6"
           >
             <div className="flex items-baseline gap-3">
-              <span className="font-serif text-3xl font-semibold text-primary">
+              <span className="font-sans text-3xl font-semibold text-primary">
                 {t.amount}
               </span>
               <span className="text-sm text-muted-foreground">
