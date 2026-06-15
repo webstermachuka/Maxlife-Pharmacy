@@ -4,7 +4,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-sm">
-            <p className="font-serif text-2xl font-semibold text-foreground">
+            <p className="text-2xl font-semibold text-foreground">
               Maxlife
             </p>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">

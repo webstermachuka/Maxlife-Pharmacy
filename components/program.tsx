@@ -8,7 +8,7 @@ export function Program() {
           We stand behind our program
         </h2>
         <p className="mt-3 text-lg text-muted-foreground">
-          Because your goals deserve more than promises &mdash; they deserve
+          Because your goals deserve more than promises. They deserve
           results.
         </p>
       </div>
@@ -18,7 +18,7 @@ export function Program() {
             key={point.title}
             className="rounded-xl border border-border bg-card p-6"
           >
-            <h3 className="font-serif text-xl font-semibold text-card-foreground">
+            <h3 className="text-xl font-semibold text-card-foreground">
               {point.title}
             </h3>
             <p className="mt-2 text-pretty leading-relaxed text-muted-foreground">

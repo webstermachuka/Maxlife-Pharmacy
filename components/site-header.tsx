@@ -11,11 +11,14 @@ export function SiteHeader() {
           <a href="#how-it-works" className="transition-colors hover:text-foreground">
             How it works
           </a>
-          <a href="#results" className="transition-colors hover:text-foreground">
-            Results
+          <a href="#table-of-contents" className="transition-colors hover:text-foreground">
+            Learn
           </a>
           <a href="#bmi" className="transition-colors hover:text-foreground">
             BMI Check
+          </a>
+          <a href="#results" className="transition-colors hover:text-foreground">
+            Results
           </a>
           <a href="#faq" className="transition-colors hover:text-foreground">
             FAQ

@@ -1,7 +1,6 @@
 import Image from "next/image"
-import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { trustBadges, medications } from "@/lib/content"
+import { medications } from "@/lib/content"
 
 export function Hero() {
   return (
@@ -36,17 +35,6 @@ export function Hero() {
               See how it works
             </Button>
           </div>
-          <ul className="flex flex-wrap gap-x-5 gap-y-2 pt-2">
-            {trustBadges.map((badge) => (
-              <li
-                key={badge}
-                className="flex items-center gap-1.5 text-sm text-muted-foreground"
-              >
-                <Check className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-                {badge}
-              </li>
-            ))}
-          </ul>
         </div>
 
         <div className="flex flex-col gap-4">
