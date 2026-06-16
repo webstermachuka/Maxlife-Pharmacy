@@ -5,7 +5,7 @@ export function SiteFooter() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-sm">
             <p className="text-2xl font-semibold text-foreground">
-              Maxlife
+              Novus Pharma
             </p>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               A wellness platform that facilitates access to GLP-1 care through
@@ -30,7 +30,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-8 border-t border-border pt-6">
           <p className="text-xs leading-relaxed text-muted-foreground">
-            &copy; {new Date().getFullYear()} Maxlife. This page is for
+            &copy; {new Date().getFullYear()} Novus Pharma. This page is for
             informational purposes only and is not a substitute for professional
             medical advice. Individual results may vary.
           </p>

@@ -10,7 +10,7 @@ export function MedicalDisclaimer() {
           educational purposes only and does not constitute medical advice. All
           treatments described are prescription-only and are available solely
           following a full medical consultation and assessment by our qualified
-          clinical team. Maxlife complies with all applicable Kenyan healthcare
+          clinical team. Novus Pharma complies with all applicable Kenyan healthcare
           regulations and the guidelines of the Pharmacy and Poisons Board.
         </p>
       </div>

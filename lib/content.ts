@@ -38,7 +38,7 @@ export const testimonials = [
     amount: "7 Kg",
     duration: "3 months",
     quote:
-      "Unlike other companies with hidden fees, MaxLife was completely transparent.",
+      "Unlike other companies with hidden fees, Novus Pharma was completely transparent.",
   },
   {
     name: "Linda",
@@ -52,7 +52,7 @@ export const testimonials = [
     amount: "9 kg",
     duration: "3 months",
     quote:
-      "It's not just about the scale. I joined Maxlife for my daughter's wedding and lost 11 kg.",
+      "It's not just about the scale. I joined Novus Pharma for my daughter's wedding and lost 11 kg.",
   },
 ]
 
@@ -89,7 +89,7 @@ export const faqs = [
   {
     question: "Are injectable weight loss medications available in Kenya?",
     answer:
-      "Yes. Certain injectable weight loss medications, including those in the GLP-1 and dual-agonist categories, are available in Kenya and are prescribed at Maxlife Pharmacy under full medical supervision. All prescriptions are issued by our qualified doctors following a thorough individual assessment, in line with international obesity treatment guidelines.",
+      "Yes. Certain injectable weight loss medications, including those in the GLP-1 and dual-agonist categories, are available in Kenya and are prescribed at Novus Pharma under full medical supervision. All prescriptions are issued by our qualified doctors following a thorough individual assessment, in line with international obesity treatment guidelines.",
   },
   {
     question: "How much does treatment cost?",
@@ -123,13 +123,13 @@ export const faqs = [
       "These medications can be beneficial for patients with insulin resistance, type 2 diabetes, or PCOS, as they support blood sugar regulation alongside weight loss. However, careful medical assessment is essential, particularly if you are already on other medications. Your doctor will review your full health profile before prescribing.",
   },
   {
-    question: "Where does Maxlife get the medications offered?",
+    question: "Where does Novus Pharma get the medications offered?",
     answer:
-      "Maxlife is a wellness platform managed by licensed doctors that facilitates access to care; we are not a drug manufacturer or a pharmacy. All semaglutide and tirzepatide products offered through our site are sold by our licensed pharmacy partners.",
+      "Novus Pharma is a wellness platform managed by licensed doctors that facilitates access to care; we are not a drug manufacturer or a pharmacy. All semaglutide and tirzepatide products offered through our site are sold by our licensed pharmacy partners.",
   },
   {
-    question: "What does Maxlife actually do?",
+    question: "What does Novus Pharma actually do?",
     answer:
-      "Maxlife makes your weight loss journey simple, accessible, safe, and fully supported. We help you every step of the way, from medical assessment and prescription to medication dispensing and ongoing guidance throughout your treatment. With Maxlife, you can access clinically approved weight loss treatments with confidence, knowing you have professional support and personalized care throughout your journey.",
+      "Novus Pharma makes your weight loss journey simple, accessible, safe, and fully supported. We help you every step of the way, from medical assessment and prescription to medication dispensing and ongoing guidance throughout your treatment. With Novus Pharma, you can access clinically approved weight loss treatments with confidence, knowing you have professional support and personalized care throughout your journey.",
   },
 ]

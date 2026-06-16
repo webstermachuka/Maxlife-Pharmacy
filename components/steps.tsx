@@ -6,7 +6,7 @@ export function Steps() {
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-base font-normal tracking-normal text-muted-foreground">
-            At Maxlife, our doctors assess each patient individually and
+            At Novus Pharma, our doctors assess each patient individually and
             recommend clinically appropriate treatment, including GLP-1
             agonists (Oral or Injectable) and dual-agonist therapies
             (injectable) where suitable, under full medical supervision.
