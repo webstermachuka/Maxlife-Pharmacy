@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { ConsultationButton } from "@/components/consultation-wizard"
 
 export function SiteHeader() {
   return (
@@ -24,9 +24,7 @@ export function SiteHeader() {
             FAQ
           </a>
         </nav>
-        <Button nativeButton={false} render={<a href="#consultation" />}>
-          Free Consultation
-        </Button>
+        <ConsultationButton>Free Consultation</ConsultationButton>
       </div>
     </header>
   )

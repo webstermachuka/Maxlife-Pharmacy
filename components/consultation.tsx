@@ -1,20 +1,8 @@
-"use client"
-
-import { useState } from "react"
 import { Check, ShieldCheck } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { ConsultationButton } from "@/components/consultation-wizard"
 import { whyMaxlife } from "@/lib/content"
 
 export function Consultation() {
-  const [submitted, setSubmitted] = useState(false)
-
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    setSubmitted(true)
-  }
-
   return (
     <section id="consultation" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
       <div className="grid gap-12 lg:grid-cols-2">
@@ -36,52 +24,26 @@ export function Consultation() {
           </ul>
         </div>
 
-        <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
-          {submitted ? (
-            <div
-              className="flex h-full flex-col items-center justify-center gap-4 py-10 text-center"
-              aria-live="polite"
-            >
-              <span className="flex h-14 w-14 items-center justify-center rounded-full bg-accent">
-                <Check className="h-7 w-7 text-primary" aria-hidden="true" />
-              </span>
-              <h3 className="font-serif text-2xl font-semibold text-card-foreground">
-                Thank you!
-              </h3>
-              <p className="max-w-sm text-muted-foreground">
-                We&apos;ve received your request. One of our weight loss
-                specialists will reach out to schedule your free consultation.
-              </p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="flex flex-col gap-2">
-                  <Label htmlFor="firstName">First name*</Label>
-                  <Input id="firstName" name="firstName" required />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Label htmlFor="lastName">Last name*</Label>
-                  <Input id="lastName" name="lastName" required />
-                </div>
-              </div>
-              <div className="flex flex-col gap-2">
-                <Label htmlFor="phone">Phone number*</Label>
-                <Input id="phone" name="phone" type="tel" required />
-              </div>
-              <div className="flex flex-col gap-2">
-                <Label htmlFor="email">Email*</Label>
-                <Input id="email" name="email" type="email" required />
-              </div>
-              <Button type="submit" size="lg" className="mt-2 w-full">
-                Submit
-              </Button>
-              <p className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-                <ShieldCheck className="h-4 w-4" aria-hidden="true" />
-                100% Confidential and Secure
-              </p>
-            </form>
-          )}
+        <div className="flex flex-col justify-center gap-6 rounded-2xl border border-border bg-card p-6 text-center sm:p-8">
+          <div className="flex flex-col items-center gap-3">
+            <span className="flex h-14 w-14 items-center justify-center rounded-full bg-accent">
+              <ShieldCheck className="h-7 w-7 text-primary" aria-hidden="true" />
+            </span>
+            <h3 className="text-2xl font-semibold text-card-foreground">
+              Start your free consultation
+            </h3>
+            <p className="max-w-sm text-muted-foreground">
+              Answer a few quick questions about your goals and health. It takes
+              under two minutes and there&apos;s no obligation.
+            </p>
+          </div>
+          <ConsultationButton size="lg" className="w-full">
+            Begin consultation
+          </ConsultationButton>
+          <p className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+            <ShieldCheck className="h-4 w-4" aria-hidden="true" />
+            100% Confidential and Secure
+          </p>
         </div>
       </div>
     </section>
