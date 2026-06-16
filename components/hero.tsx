@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { ConsultationButton } from "@/components/consultation-wizard"
 import { medications } from "@/lib/content"
 
 export function Hero() {
@@ -19,13 +20,9 @@ export function Hero() {
             supervised treatment tailored to your body and goals.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button
-              nativeButton={false}
-              render={<a href="#consultation" />}
-              size="lg"
-            >
+            <ConsultationButton size="lg">
               Start free consultation
-            </Button>
+            </ConsultationButton>
             <Button
               nativeButton={false}
               render={<a href="#how-it-works" />}

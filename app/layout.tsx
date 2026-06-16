@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Fraunces, Inter } from 'next/font/google'
+import { ConsultationProvider } from '@/components/consultation-wizard'
 import './globals.css'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
@@ -15,7 +16,7 @@ const fraunces = Fraunces({
 const inter = Inter({ variable: '--font-inter', subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Maxlife | Personalized GLP-1 Weight Loss Treatment',
+  title: 'Novus Pharma | Personalized GLP-1 Weight Loss Treatment',
   description:
     'Safe, guided and effective GLP-1 weight loss treatment. Free consultation, no insurance needed, medication included. Lose up to 15% of your body weight.',
   generator: 'v0.app',
@@ -49,7 +50,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} ${inter.variable} bg-background`}
     >
       <body className="font-sans antialiased">
-        {children}
+        <ConsultationProvider>{children}</ConsultationProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

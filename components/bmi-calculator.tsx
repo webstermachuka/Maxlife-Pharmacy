@@ -58,7 +58,7 @@ export function BmiCalculator() {
     <section id="bmi" className="border-y border-border bg-secondary/40">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24">
         <div>
-          <h2 className="text-balance font-serif text-3xl font-semibold text-foreground sm:text-4xl">
+          <h2 className="text-balance font-sans text-3xl font-semibold text-foreground sm:text-4xl">
             Check your BMI
           </h2>
           <p className="mt-3 text-lg text-muted-foreground">

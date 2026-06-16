@@ -4,7 +4,7 @@ export function Program() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-balance font-serif text-3xl font-semibold text-foreground sm:text-4xl">
+        <h2 className="text-balance font-sans text-3xl font-semibold text-foreground sm:text-4xl">
           We stand behind our program
         </h2>
         <p className="mt-3 text-lg text-muted-foreground">

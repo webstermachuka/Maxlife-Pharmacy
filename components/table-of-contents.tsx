@@ -33,7 +33,7 @@ const topics: Topic[] = [
   { id: "how-they-work", title: "How These Medications Work" },
   { id: "right-for-you", title: "Is This Treatment Right for You?" },
   { id: "comparison", title: "GLP-1 vs Dual-Agonist: Which One Suits You?" },
-  { id: "why-maxlife", title: "Why Choose Maxlife?" },
+  { id: "why-maxlife", title: "Why Choose Novus Pharma?" },
 ]
 
 const benefits = [
@@ -115,7 +115,7 @@ const comparisonRows = [
     glp1: "Similar side-effect profile",
   },
   {
-    aspect: "Availability at Maxlife",
+    aspect: "Availability at Novus Pharma",
     dual: "Mounjaro available after consultation",
     glp1: "Ozempic and Wegovy available after consultation",
   },
@@ -143,7 +143,7 @@ export function TableOfContents() {
     >
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:py-24">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-balance font-serif text-3xl font-semibold text-foreground sm:text-4xl">
+          <h2 className="text-balance font-sans text-3xl font-semibold text-foreground sm:text-4xl">
             Learn about medical weight loss
           </h2>
           <p className="mt-3 text-pretty text-lg leading-relaxed text-muted-foreground">
@@ -225,7 +225,7 @@ export function TableOfContents() {
                 />
                 <div className="space-y-3 leading-relaxed">
                   <p>
-                    Maxlife is a patient management platform that collaborates
+                    Novus Pharma is a patient management platform that collaborates
                     with independent physicians and healthcare practitioners.
                   </p>
                   <p>
@@ -313,7 +313,7 @@ export function TableOfContents() {
                   aria-hidden="true"
                 />
                 <p className="text-sm leading-relaxed text-foreground">
-                  <strong>Important Note:</strong> Within the Maxlife Weight Loss
+                  <strong>Important Note:</strong> Within the Novus Pharma Weight Loss
                   Management Program, medication doses are adjusted only by the
                   prescribing doctor based on individual medical response and
                   progress.
@@ -432,11 +432,11 @@ export function TableOfContents() {
             className="scroll-mt-24 rounded-xl border border-border bg-card px-5"
           >
             <AccordionTrigger className="text-base font-semibold">
-              7. Why Choose Maxlife?
+              7. Why Choose Novus Pharma?
             </AccordionTrigger>
             <AccordionContent className="leading-relaxed text-muted-foreground">
               <p>
-                At Maxlife, care extends beyond simply receiving a prescription.
+                At Novus Pharma, care extends beyond simply receiving a prescription.
                 Our approach recognizes that successful long-term weight
                 management requires medical, nutritional, and behavioural
                 support.
